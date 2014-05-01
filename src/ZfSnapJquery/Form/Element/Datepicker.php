@@ -12,5 +12,12 @@ use Zend\Form\Element;
  */
 class Datepicker extends Element
 {
-
+    /**
+     * Seed attributes
+     *
+     * @var array
+     */
+    protected $attributes = array(
+        'type' => 'datepicker'
+    );
 }

@@ -12,5 +12,12 @@ use Zend\Form\Element;
  */
 class Autocomplete extends Element
 {
-
+    /**
+     * Seed attributes
+     *
+     * @var array
+     */
+    protected $attributes = array(
+        'type' => 'autocomplete'
+    );
 }

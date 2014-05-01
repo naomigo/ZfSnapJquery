@@ -53,6 +53,7 @@ abstract class AbstractHelper extends Helper
 
         if ($element !== null) {
             $id = $this->getId($element);
+            $id = str_replace(']','\\\]',str_replace('[','\\\[',$id));
             $caller->selector('#'. $id);
         }
         return $caller;

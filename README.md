@@ -5,6 +5,8 @@ jQuery and jQuery UI helpers and form elements for Zend Framework 2
 
 Version 0.5.0 Created by Witold Wasiczko
 
+Forked by naomigo to add support for timepicker-addon (http://trentrichardson.com/examples/timepicker/)
+
 Features
 ========
 
@@ -13,6 +15,9 @@ Features
   * [Spinner](http://jqueryui.com/spinner/)
   * [Datepicker](http://jqueryui.com/datepicker/)
   * [Autocomplete](http://jqueryui.com/autocomplete/)
+* Timepicker addon elements
+  * [Datetimepicker]
+  * [Timepicker]
 * Auto include js and css files with libs (using public cdn)
 * Highly configurable
 * Ready to use without configuration

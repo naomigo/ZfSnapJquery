@@ -33,6 +33,11 @@ return array(
                 // Set to false if you want to include script and style by your self
                 'enabled' => true,
             ),
+            'jquery-ui-timepicker-addon' => array(
+            	'cdnStyle' => Libraries\TimepickerAddon::CDN_STYLE_DEFAULT,
+            	'cdnScript' => Libraries\TimepickerAddon::CDN_DEFAULT,
+            	'enabled' => true,
+            ),
         ),
         'view-helpers' => array(
             'jquery' => array(
@@ -46,10 +51,12 @@ return array(
             'jquery-class' => 'ZfSnapJquery\Libraries\Jquery',
             'jquery-ui-class' => 'ZfSnapJquery\Libraries\Jqueryui',
             'jquery-view-helper-class' => 'ZfSnapJquery\View\Helper\Jquery',
+    		'jquery-ui-timepicker-addon-class' => 'ZfSnapJquery\Libraries\TimepickerAddon',
         ),
         'factories' => array(
             'jquery' => 'ZfSnapJquery\Libraries\JqueryFactory',
             'jquery-ui' => 'ZfSnapJquery\Libraries\JqueryuiFactory',
+        	'jquery-ui-timepicker-addon' => 'ZfSnapJquery\Libraries\TimepickerAddonFactory',
         ),
     ),
     'view_helpers' => array(
@@ -58,6 +65,8 @@ return array(
             'formJquerySpinner' => 'ZfSnapJquery\Form\View\Helper\Spinner',
             'formJqueryDatepicker' => 'ZfSnapJquery\Form\View\Helper\Datepicker',
             'formJqueryAutocomplete' => 'ZfSnapJquery\Form\View\Helper\Autocomplete',
+    		'formJqueryDatetimepicker' => 'ZfSnapJquery\Form\View\Helper\Datetimepicker',
+    		'formJqueryTimepicker' => 'ZfSnapJquery\Form\View\Helper\Timepicker',
         ),
         'factories' => array(
             'jquery' => 'ZfSnapJquery\View\Helper\JqueryFactory',
@@ -69,6 +78,8 @@ return array(
             'spinner' => 'ZfSnapJquery\Form\Element\Spinner',
             'datepicker' => 'ZfSnapJquery\Form\Element\Datepicker',
             'autocomplete' => 'ZfSnapJquery\Form\Element\Autocomplete',
+    		'datetimepicker' => 'ZfSnapJquery\Form\Element\Datetimepicker',
+    		'timepicker' => 'ZfSnapJquery\Form\Element\Timepicker',
         ),
     )
 );

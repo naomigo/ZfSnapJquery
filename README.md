@@ -16,8 +16,8 @@ Features
   * [Datepicker](http://jqueryui.com/datepicker/)
   * [Autocomplete](http://jqueryui.com/autocomplete/)
 * Timepicker addon elements
-  * [Datetimepicker]
-  * [Timepicker]
+  * Datetimepicker
+  * Timepicker
 * Auto include js and css files with libs (using public cdn)
 * Highly configurable
 * Ready to use without configuration
@@ -51,6 +51,16 @@ class Jquery extends Form
         $this->add(array(
             'name' => 'datepicker',
             'type' => 'Datepicker',
+        ));
+        
+        $this->add(array(
+            'name' => 'datetimepicker',
+            'type' => 'Datetimepicker',
+        ));
+
+        $this->add(array(
+            'name' => 'timepicker',
+            'type' => 'Timepicker',
         ));
 
         $this->add(array(
@@ -109,6 +119,14 @@ and print it in view:
 
 <div class="form_element">
 <?php echo $this->formJqueryAutocomplete($this->form->get('autocomplete')); ?>
+</div>
+
+<div class="form_element">
+<?php echo $this->formJqueryDatetimepicker($this->form->get('datetimepicker')); ?>
+</div>
+
+<div class="form_element">
+<?php echo $this->formJqueryTimepicker($this->form->get('timepicker')); ?>
 </div>
 
 <div class="form_element">

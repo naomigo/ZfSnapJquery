@@ -27,6 +27,7 @@ class JqueryFactory implements FactoryInterface
         /* @var $helper \ZfSnapJquery\View\Helper\Jquery */
         $helper->addLibrary($serviceManager->get('jquery'));
         $helper->addLibrary($serviceManager->get('jquery-ui'));
+        $helper->addLibrary($serviceManager->get('jquery-ui-timepicker-addon'));
         $helper->setAppendToOwnHelper($configJquery['appendToOwnHelper']);
 
         return $helper;
